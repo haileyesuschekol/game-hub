@@ -1,9 +1,12 @@
-import { List, ListItem, HStack, Image, Text } from "@chakra-ui/react"
+import { List, ListItem, HStack, Image, Text, Spinner } from "@chakra-ui/react"
 import useGenres from "../hooks/useGenres"
 import getOptimizedImage from "../services/getOptimizedImage"
 
 const GenreList = () => {
-  const { data } = useGenres()
+  const { data, isLoading } = useGenres()
+
+  if (isLoading) return <Spinner />
+
   return (
     <List>
       {data.map((genre) => (
