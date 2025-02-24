@@ -29,3 +29,15 @@ A web that serves as a hub for gamers to explore, discover, and view information
 ```bash
 git clone https://github.com/haileyesuschekol/game-hub.git
 ```
+
+### install dependencies
+
+```bash
+npm install
+```
+
+### start app
+
+```bash
+npm run dev
+```
